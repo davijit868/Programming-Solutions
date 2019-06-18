@@ -12,4 +12,3 @@ BFS (G,s)
 				print(w)
 				Q.enqueue(w)
 				mark w as visited.
-		
