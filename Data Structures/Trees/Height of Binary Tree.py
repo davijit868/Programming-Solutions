@@ -40,25 +40,19 @@ class BinarySearchTree:
                 else:
                     break
 
-maxHeight = 0
-def height1(current):
-    global maxHeight
-    #print(current.info)
-    if current.level > maxHeight:
-        maxHeight = current.level
-    if current.right:
-        current.right.level = current.level + 1
-        current = current.right
-        height1(current)
-    if current.left:
-        current.left.level = current.level + 1
-        current = current.left
-        height1(current)
-
-    return 
+def height(current):
+    if root == None:
+        return -1
+    else:
+        return 1 + max( height(root.left), height(root.right) )
     
+tree = BinarySearchTree()
+t = int(input())
 
-def height(root):
-    root.level = 0
-    height1(root)
-    return maxHeight
+arr = list(map(int, input().split()))
+
+for i in range(t):
+    tree.create(arr[i])
+
+print(height(tree.root))
+
