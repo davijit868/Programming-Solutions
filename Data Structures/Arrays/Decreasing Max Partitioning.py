@@ -1,3 +1,9 @@
+'''
+
+https://www.hackerearth.com/challenges/competitive/june-circuits-17/algorithm/decreasing-max-partitioning/
+
+'''
+
 c = 0
 def partition(a, t):
     global c, sg
