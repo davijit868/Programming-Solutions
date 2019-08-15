@@ -2,6 +2,8 @@
 
 https://www.hackerearth.com/challenges/competitive/june-circuits-17/algorithm/decreasing-max-partitioning/
 
+Partially Solved
+
 '''
 
 c = 0
