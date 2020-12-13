@@ -1,5 +1,5 @@
 # Programming Solutions
-This repository contains solutions of the programming problems I solved in HackerEarth, HackerRank and GeeksforGeeks.
+This repository contains solutions of the programming problems I solved in HackerEarth, HackerRank, GeeksforGeeks, LeetCode etc.
 
 - https://www.hackerearth.com/@davijit868
 - https://www.hackerrank.com/davijit868
