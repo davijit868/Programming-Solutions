@@ -1,0 +1,26 @@
+'''
+
+Problem 235 | Lowest Common Ancestor of a Binary Search Tree
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+
+'''
+
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        def traverse(node):
+            if node.val == p.val or node.val == q.val:
+                return node
+            elif p.val < node.val and q.val < node.val:
+                return traverse(node.left)
+            elif p.val > node.val and q.val > node.val:
+                return traverse(node.right)
+            else:
+                return node
+        return traverse(root)
+            
